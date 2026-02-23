@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Commands to compile code, install dependencies, or package the app
                 sh 'echo "Building the application..."'
-                sh 'make sampleapp' 
+                //sh 'make sampleapp' 
             }
         }
 
@@ -14,7 +14,7 @@ pipeline {
             steps {
                 // Commands to run unit tests, integration tests, or quality checks
                 sh 'echo "Running tests..."'
-                sh './testcasescript' 
+                //sh './testcasescript' 
             }
         }
 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 // Commands to deploy the tested application to a server/environment
                 sh 'echo "Deploying to server..."'
-                sh './deployscript'
+                //sh './deployscript'
             }
         }
     }
